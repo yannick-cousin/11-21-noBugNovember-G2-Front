@@ -1,0 +1,79 @@
+.pageConnect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formConnect {
+  top: 50%;
+  transform: translateY(+50%);
+}
+
+.fieldCollection {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 5px;
+}
+
+#gridCo1 {
+  grid-area: 1 / 1 / 2 / 7;
+}
+
+#gridCo2 {
+  grid-area: 2 / 1 / 3 / 7;
+}
+
+#gridCo3 {
+  grid-area: 4 / 3 / 5 / 5;
+}
+
+#gridCo4 {
+  grid-area: 6 / 1 / 7 / 7;
+}
+
+.buttonConnect {
+  height: 50px;
+  line-height: 20px;
+  background: var(--thirdColor);
+  color: var(--gradientColor);
+  backdrop-filter: blur(10px);
+  border-radius: 999px;
+  box-shadow: 5px 5px 5px var(--shadowColor);
+  padding: 8px;
+  border: 2px solid var(--firstColor);
+  -webkit-appearance: none;
+}
+
+.buttonConnect:hover {
+  cursor: pointer;
+}
+
+.buttonConnect:active {
+  background: var(--firstColor);
+  color: var(--thirdColor);
+}
+
+.inputText {
+  background: none;
+  color: var(--thirdColor);
+  width: 100%;
+  text-align: center;
+}
+
+.inputText:hover {
+  cursor: auto;
+}
+
+.inputText:focus {
+  border: 2px solid var(--thirdColor);
+  outline: none;
+  background: none;
+}
+
+@media (max-width: 768px) {
+  #gridCo3 {
+    grid-area: 4 / 1 / 5 / 7;
+  }
+}

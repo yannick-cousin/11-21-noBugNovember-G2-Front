@@ -1,0 +1,22 @@
+#cache {
+  display: none;
+}
+
+#reveal {
+  display: flex;
+}
+
+.profilTableau {
+  margin-bottom: 20px;
+}
+
+.headerTableau {
+  color: var(--gradientColor);
+  background-color: var(--thirdColor);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 5px var(--shadowColor);
+}
+
+.MuiToolbar-root {
+  color: var(--thirdColor);
+}

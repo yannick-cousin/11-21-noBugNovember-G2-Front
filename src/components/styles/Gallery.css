@@ -1,0 +1,22 @@
+.gallery {
+  margin: 100px auto 0;
+  padding: 0 20px;
+  max-width: 88vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 0.2fr));
+  grid-gap: 45px;
+  justify-content: center;
+}
+
+.seeMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: 0 20px 50px;
+  }
+}

@@ -1,0 +1,95 @@
+.globalPopupPage {
+  display: block;
+  position: fixed;
+  top: 0%;
+  left: 180px;
+  padding: 100%;
+  z-index: 20000;
+}
+
+.holderShareActive {
+  display: block;
+  opacity: 1;
+  position: fixed;
+  box-shadow: 0 5px 25px var(--shadowColor);
+  backdrop-filter: blur(20px);
+  z-index: 30000;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 0px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid;
+}
+
+@-moz-document url-prefix() {
+  .holderShareActive {
+    background-color: var(--gradientColor);
+  }
+}
+
+#holderShareActivePrez {
+  background-color: var(--gradientColor);
+}
+
+#popupButtonExit {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#popupButtonExit img {
+  width: 26px;
+}
+#shareSocial {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+#clipboard {
+  margin-top: 2vh;
+}
+
+#clipboard button {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: var(--gradientColor);
+  color: var(--thirdColor);
+  border: 2px solid var(--thirdColor);
+  margin: 5px;
+}
+
+#clipboard button i {
+  width: 100%;
+  opacity: 1;
+}
+
+#clipboard input {
+  background: var(--gradientColor);
+  color: var(--thirdColor);
+}
+
+#popupLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#popupLineLeft {
+  width: 5vw;
+  height: 2px;
+  background-color: var(--thirdColor);
+}
+
+#popupLineRight {
+  width: 5vw;
+  height: 2px;
+  background-color: var(--thirdColor);
+}

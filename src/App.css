@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+:root {
+  --firstColor: #6667ab;
+  --secondColor: #ff74d9;
+  --thirdColor: #2b0e45;
+  --gradientColor: #9b9ee1;
+  --shadowColor: #2b0e4545;
+  --fontTitle: 'IvyJournal' 400;
+  --fontBody: 'Ivyjournal', sans-serif;
+  backface-visibility: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+[data-theme='dark'] {
+  --firstColor: #c2c3f0;
+  --secondColor: #f7ace3;
+  --thirdColor: rgb(235, 235, 235);
+  --gradientColor: #1e1f34;
+  --shadowColor: #c2c3f02f;
+  --fontTitle: 'IvyJournal' 400;
+  --fontBody: 'Ivyjournal', sans-serif;
+  backface-visibility: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+a {
+  text-decoration: none;
+}
+
+#App {
+  background: var(--gradientColor);
+  font-family: var(--fontBody);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-attachment: fixed;
+  font-style: normal;
+  color: var(--thirdColor);
 }
 
-.App-link {
-  color: #61dafb;
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+h1 h2 {
+  font-family: var(--fontTitle);
+  font-weight: 400;
+  color: var(--thirdColor);
 }
